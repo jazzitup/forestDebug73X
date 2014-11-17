@@ -36,7 +36,7 @@
 #include "DataFormats/VertexReco/interface/Vertex.h"
 #include "DataFormats/VertexReco/interface/VertexFwd.h"
 #include "DataFormats/HeavyIonEvent/interface/Centrality.h"
-#include "RecoHI/HiCentralityAlgos/interface/CentralityProvider.h"
+#include "DataFormats/HeavyIonEvent/interface/CentralityProvider.h"
 #include "DataFormats/TrackerRecHit2D/interface/SiPixelRecHitCollection.h"
 #include "FWCore/Framework/interface/Frameworkfwd.h"
 #include "FWCore/Framework/interface/EDAnalyzer.h"
@@ -63,7 +63,8 @@
 #include "DataFormats/L1GlobalTrigger/interface/L1GlobalTriggerReadoutRecord.h"
 #include "DataFormats/L1GlobalTrigger/interface/L1GlobalTriggerObjectMapRecord.h"
 #include "DataFormats/L1GlobalTrigger/interface/L1GlobalTriggerObjectMap.h"
-#include "L1Trigger/GlobalTrigger/interface/L1GlobalTrigger.h"
+//#include "L1Trigger/GlobalTrigger/interface/L1GlobalTrigger.h" // cmssw 53X
+#include "L1Trigger/GlobalTrigger/plugins/L1GlobalTrigger.h"    // cmssw 73X (fixed by Y. Kim)
 
 #include "DataFormats/Math/interface/Point3D.h"
 #include "DataFormats/BeamSpot/interface/BeamSpot.h"
